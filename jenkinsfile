@@ -4,11 +4,11 @@ pipeline {
     parameters {
         string(name: 'Env', defaultValue: 'Test', description: 'Enter the envirornment to deploy')
 
-        text(name: 'Jenkins ', defaultValue: '', description: 'Enter some information about the person')
+        text(name: 'Jenkins ', defaultValue: '', description: 'Enter some information about the deployment')
 
         booleanParam(name: 'tests ', defaultValue: true, description: 'Toggle this value')
 
-        choice(name:'APPVERSION',choices:['1.1','1.2','1.3'])
+        choice(name:'APPVERSION',choices:['1.1','1.2','1.3','1.4'])
 
     }
     stages {
