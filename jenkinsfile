@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+            steps {
+                echo 'Compiling code'
+            }
+        }
+        stage('unit test') {
+            steps {
+                echo 'Testing code'
+            }
+        }
+        stage('Code Review') {
+            steps {
+                echo 'Reviewing the code'
+            }
+        }
+        stage('Package') {
+            steps {
+                echo 'Packaging the code'
+            }
+        }
+        stage('Coverage analysis') {
+            steps {
+                echo 'Verifying the code'
+            }
+        }
+    }
+}
